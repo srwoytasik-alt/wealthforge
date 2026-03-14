@@ -1,86 +1,67 @@
 import os
-from dotenv import load_dotenv
 from pymongo import MongoClient
-import streamlit as st
-# import os
-# from dotenv import load_dotenv
-# from pymongo import MongoClient
+from dotenv import load_dotenv
 
+# Load local .env file (works locally, ignored on Render)
 load_dotenv()
 
+# Read MongoDB URI from environment
 MONGO_URI = os.getenv("MONGO_URI")
 
 if not MONGO_URI:
     raise Exception("MONGO_URI environment variable not set")
 
+# Connect to MongoDB
 client = MongoClient(MONGO_URI)
+
+# Use the WealthForge database
 db = client["wealthforge"]
 
 
-# load_dotenv()
-# uri = os.getenv("MONGO_URI")
-
-# if not uri:
-#     st.error("MONGO_URI not found in .env file")
-#     st.stop()
-
-# try:
-#     client = MongoClient(uri)
-#     db = client["wealthforge"]
-#     # Test connection
-#     db.command("ping")
-# except Exception as e:
-#     st.error(f"Connection failed: {str(e)}")
-#     st.stop()
-
-import certifi  # <-- Add this import at the top of db.py (after other imports)
-
-try:
-    client = MongoClient(uri, tlsCAFile=certifi.where())  # <-- Key change here
-    db = client["wealthforge"]
-    # Test connection
-    db.command("ping")
-    print("MongoDB connection test successful!")  # Optional: visible in terminal
-except Exception as e:
-    st.error(f"Connection failed: {str(e)}")
-    st.stop()
-
 def get_collection(name):
+    """Return a MongoDB collection."""
     return db[name]
 
+
 def seed_data():
-    if get_collection("assets").count_documents({}) == 0:
-        get_collection("assets").insert_many([
-            {"name": "Home", "value": 268000},
-            {"name": "Toyota", "value": 7000},
-            {"name": "Ford", "value": 3500},
-            {"name": "Trailer (selling soon)", "value": 6500, "note": "flip profit projected ~$6.5k"},
-            {"name": "Emergency Fund", "value": 0, "goal": 3000}
+    """Seed initial data if database is empty."""
+    assets_col = db["assets"]
+    debts_col = db["debts"]
+    budget_col = db["budget"]
+
+    if assets_col.count_documents({}) == 0:
+        assets_col.insert_many([
+            {"name": "Emergency Fund", "value": 0},
+            {"name": "Home Value", "value": 268000},
+            {"name": "Toyota Corolla", "value": 7000},
+            {"name": "Ford Truck", "value": 3500},
+            {"name": "Trailer", "value": 6500}
         ])
-        
-        get_collection("debts").insert_many([
-            {"name": "Student Loan", "balance": 12000},
+
+    if debts_col.count_documents({}) == 0:
+        debts_col.insert_many([
+            {"name": "Mortgage", "balance": 168000},
             {"name": "Credit Cards", "balance": 40000},
-            {"name": "Car Loan", "balance": 5206},
-            {"name": "Home Loan", "balance": 168000}
+            {"name": "Student Loan", "balance": 12000},
+            {"name": "Car Loan", "balance": 5206}
         ])
-        
-        get_collection("budget").insert_one({
+
+    if budget_col.count_documents({}) == 0:
+        budget_col.insert_one({
             "monthly_income": 3397,
             "expenses": {
                 "mortgage": 904,
                 "property tax": 334,
-                "gas": 160,
-                "home Insurance": 130,
+                "gas": 100,
+                "home insurance": 130,
                 "food": 650,
                 "car loan": 340,
-                "credit cards": 500,
+                "credit cards": 400,
                 "meds": 50,
                 "oil changes": 30,
                 "holidays/car registration": 242,
-                "ChatGPT": 8,
-                "Lot rent": 0,
+                "ChatGPT": 20,
+                "Lot rent": 360,
                 "retirement 5%": 243
             }
         })
-        st.success("✅ Initial data seeded from your June/post-June numbers!")
