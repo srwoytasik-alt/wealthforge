@@ -1,0 +1,44 @@
+wealthforge/
+├── .env                     # put your MongoDB connection string here
+├── requirements.txt
+├── app.py                   # main Streamlit app + sidebar navigation
+├── config.py                # your categories, initial values, constants
+├── db.py                    # MongoDB connection & basic CRUD helpers
+├── data/
+│   └── initial_seed.json    # your June budget + debts/assets + new mobile home
+├── modules/
+│   └── cashflow_dashboard.py   # main view with income/expenses/net/surplus/charts
+└── utils/
+    └── calculations.py      # net worth, monthly surplus, etc.
+    
+
+
+
+
+ChatGPT projected structure something like this
+LifeOS
+│
+├ FinanceOS (WealthForge)
+│   ├ Budget
+│   ├ Net Worth
+│   ├ Debt Engine
+│   ├ Forecast Engine
+│   └ Stability Engine
+│
+├ CareerOS
+│   ├ Resume
+│   ├ Skills tracker
+│   ├ Learning roadmap
+│
+├ FamilyOS
+│   ├ Calendar
+│   ├ Goals
+│   ├ Planning
+│
+└ ProjectsOS
+    ├ Engineering ideas
+    ├ Build tracker
+    └ Portfolio
+
+
+    

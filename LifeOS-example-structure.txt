@@ -1,0 +1,17 @@
+LifeOS
+│
+├ apps
+│   ├ wealthforge
+│   │   ├ app.py
+│   │   ├ db.py
+│   │   ├ calculations.py
+│   │   └ config.py
+│   │
+│   ├ careeros
+│   │   └ app.py
+│   │
+│   ├ familyos
+│   │   └ app.py
+│   │
+│   └ projectsos
+│       └ app.py

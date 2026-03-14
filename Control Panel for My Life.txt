@@ -1,0 +1,26 @@
+Control Panel for My Life
+
+
+LifeOS
+│
+├ FinanceOS (WealthForge)
+│   ├ Budget
+│   ├ Net Worth
+│   ├ Debt Engine
+│   ├ Forecast Engine
+│   └ Stability Engine
+│
+├ CareerOS
+│   ├ Resume
+│   ├ Skills tracker
+│   ├ Learning roadmap
+│
+├ FamilyOS
+│   ├ Calendar
+│   ├ Goals
+│   ├ Planning
+│
+└ ProjectsOS
+    ├ Engineering ideas
+    ├ Build tracker
+    └ Portfolio

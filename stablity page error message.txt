@@ -1,0 +1,21 @@
+
+Navigation
+
+Stability
+WealthForge
+ENGINEER BY TRADE • DAD BY PURPOSE • PROBLEM-SOLVER BY NATURE — Steve
+
+Stability View (v1)
+streamlit.errors.StreamlitAPIException: Progress Value has invalid value [0.0, 1.0]: 1.0666666666666667
+
+Traceback:
+File "/Users/stevenwoytasik/Documents/wealthforge/app.py", line 152, in <module>
+    st.progress(emergency_current / 3000)
+File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/elements/progress.py", line 159, in progress
+    progress_proto.value = _get_value(value)
+                           ^^^^^^^^^^^^^^^^^
+File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/elements/progress.py", line 72, in _get_value
+    raise StreamlitAPIException(
+Copy
+Ask Google
+Ask ChatGPT

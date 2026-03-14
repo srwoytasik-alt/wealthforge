@@ -1,0 +1,31 @@
+Tech choices for v1 (battle-tested and matches what you want):
+Python + Streamlit (instant web app, beautiful charts with Plotly, zero frontend hassle)
+MongoDB Atlas (free tier forever for personal use—exactly what you asked for)
+Pandas for calculations
+PyMongo for DB
+No login yet (personal use only)
+This is not another throwaway script. It will be a real web app you can open in your browser, update daily, and later connect to LifeOS.
+Feature Roadmap (so we never rewrite, just extend)
+v2 → Debt Navigator: payoff simulator (snowball vs avalanche), extra payment calculator, projected payoff dates
+v3 → Stability Engine: risk scoring, buffer calculations, “what-if” scenarios (job loss, rate hikes)
+v4 → Forecast Engine: 5–10 year projections, inflation, raises, retirement growth
+v5+ → Full integration with LifeOS (e.g., “Pay mortgage” task in LifeOS auto-marks in WealthForge and vice-versa), PDF reports, CSV bank imports, investment tracker, goals, alerts
+Practical Money Features We’ll Add Over Time (real-world useful stuff)
+Recurring bills auto-filled every month
+“Payoff priority” ranking (your $40k credit cards will scream at you)
+Net-worth trend chart over time
+Retirement contribution tracker (your 5% is already there)
+Tax-season summary (deductible mortgage + property tax)
+Goal setting (new car, home renovation, $10k emergency)
+Import from bank CSV (Chase, etc.)
+“Fun money” category so you don’t burn out
+Inflation-adjusted forecasts (critical in 2026+)
+
+
+
+i would like to implement these additions and the new editions proposed Make the surplus number green when positive / red when negative (easy delta_color tweak).
+Add a simple "Update Emergency Fund" input/button on Stability or Dashboard (so you can bump it from $0 when you start saving).
+Show your upcoming paychecks (March 20 ~$850, April 3 ~$1700) as a temporary "Transition Income" section.
+Add basic edit forms for expenses/debts/assets (e.g., number inputs to change values and save back to MongoDB).
+Deploy to Render.com so it's accessible from your phone/browser anywhere (free tier, same as your LifeOS app).
+
