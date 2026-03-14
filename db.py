@@ -2,13 +2,27 @@ import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
 import streamlit as st
+# import os
+# from dotenv import load_dotenv
+# from pymongo import MongoClient
 
 load_dotenv()
-uri = os.getenv("MONGO_URI")
 
-if not uri:
-    st.error("MONGO_URI not found in .env file")
-    st.stop()
+MONGO_URI = os.getenv("MONGO_URI")
+
+if not MONGO_URI:
+    raise Exception("MONGO_URI environment variable not set")
+
+client = MongoClient(MONGO_URI)
+db = client["wealthforge"]
+
+
+# load_dotenv()
+# uri = os.getenv("MONGO_URI")
+
+# if not uri:
+#     st.error("MONGO_URI not found in .env file")
+#     st.stop()
 
 # try:
 #     client = MongoClient(uri)
