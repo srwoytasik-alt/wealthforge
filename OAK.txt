@@ -1,0 +1,11 @@
+Integration for authentication via apple id, gmail, and facebook
+
+Use service like plaid to automate pulling in a user transactions micro batch
+
+Look at overall debt to income too
+
+Figure out net worth
+
+Liabilities and expenses, equity and assets
+
+Essentially your current (asset - liabilities) + (revenue - expense) forecast in 2 years

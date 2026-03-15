@@ -1,0 +1,42 @@
+wealthforge/
+│
+├── app.py                # Streamlit entry point
+├── config.py             # configuration (env variables)
+│
+├── db/
+│   ├── db.py             # MongoDB connection
+│   └── seed.py           # initial data setup
+│
+├── models/
+│   ├── accounts.py
+│   ├── transactions.py
+│   ├── assets.py
+│   └── debts.py
+│
+├── services/
+│   ├── ledger_service.py
+│   ├── analytics_service.py
+│   ├── stability_service.py
+│   └── forecast_service.py
+│
+├── pages/
+│   ├── dashboard.py
+│   ├── transactions.py
+│   ├── networth.py
+│   ├── assets_debts.py
+│   └── stability.py
+│
+├── calculators/
+│   ├── opportunity_cost.py
+│   ├── loan_payoff.py
+│   └── buy_vs_rent.py
+│
+├── utils/
+│   ├── calculations.py
+│   └── formatting.py
+│
+├── data/
+│   └── seed_data.json
+│
+├── requirements.txt
+└── README.md

@@ -1,0 +1,36 @@
+                WEALTHFORGE LEDGER ENGINE
+                -------------------------
+
+                       Transactions
+                           │
+                           │
+                           ▼
+                 ┌───────────────────┐
+                 │   Transaction DB  │
+                 │                   │
+                 │ Income            │
+                 │ Expense           │
+                 │ Transfer          │
+                 └───────────────────┘
+                           │
+                           │
+                           ▼
+                   Ledger Processor
+             (calculate account balances)
+                           │
+                           │
+                           ▼
+                    Accounts Table
+            ┌─────────────────────────┐
+            │ Checking                │
+            │ Savings                 │
+            │ Emergency Fund          │
+            │ Cash (Wallet)           │
+            │ Credit Card             │
+            │ Mortgage                │
+            └─────────────────────────┘
+                           │
+                           │
+                           ▼
+                   Balance Calculation
+                   

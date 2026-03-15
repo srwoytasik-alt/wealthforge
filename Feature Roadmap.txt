@@ -1,0 +1,17 @@
+Feature Roadmap (so we never rewrite, just extend)
+
+v2 → Debt Navigator: payoff simulator (snowball vs avalanche), extra payment calculator, projected payoff dates
+v3 → Stability Engine: risk scoring, buffer calculations, “what-if” scenarios (job loss, rate hikes)
+v4 → Forecast Engine: 5–10 year projections, inflation, raises, retirement growth
+v5+ → Full integration with LifeOS (e.g., “Pay mortgage” task in LifeOS auto-marks in WealthForge and vice-versa), PDF reports, CSV bank imports, investment tracker, goals, alerts
+Practical Money Features We’ll Add Over Time (real-world useful stuff)
+
+Recurring bills auto-filled every month
+“Payoff priority” ranking (your $40k credit cards will scream at you)
+Net-worth trend chart over time
+Retirement contribution tracker (your 5% is already there)
+Tax-season summary (deductible mortgage + property tax)
+Goal setting (new car, home renovation, $10k emergency)
+Import from bank CSV (Chase, etc.)
+“Fun money” category so you don’t burn out
+Inflation-adjusted forecasts (critical in 2026+)

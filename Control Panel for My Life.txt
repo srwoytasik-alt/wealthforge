@@ -24,3 +24,19 @@ LifeOS
     ├ Engineering ideas
     ├ Build tracker
     └ Portfolio
+
+
+
+
+
+You’re slowly building something like:
+
+LifeOS
+│
+├ WealthForge
+│   ├ Ledger
+│   ├ Balance Sheet
+│   ├ Liquidity Engine
+│   └ Forecast Engine
+
+Which is actually a very clean financial architecture.

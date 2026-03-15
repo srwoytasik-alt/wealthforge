@@ -1,0 +1,104 @@
+                           LIFE OS
+                Control Panel for My Life
+                        │
+                        │
+                        ▼
+                    WEALTHFORGE
+            Personal Financial Operating System
+────────────────────────────────────────────────────────
+
+                    INPUT LAYER
+            (User enters financial data)
+
+        ┌─────────────────────────────────┐
+        │ Transactions                    │
+        │ • Income                        │
+        │ • Expenses                      │
+        │ • Transfers                     │
+        │                                 │
+        │ Budget                          │
+        │ • Expected income               │
+        │ • Planned expenses              │
+        └─────────────────────────────────┘
+
+
+                    STATE LAYER
+            (Current financial position)
+
+        ┌─────────────────────────────────┐
+        │ Accounts                        │
+        │ • Checking                      │
+        │ • Savings                       │
+        │ • Emergency Fund                │
+        │ • Cash (Wallet)                 │
+        │ • Credit Card                   │
+        │                                 │
+        │ Assets                          │
+        │ • House                         │
+        │ • Vehicles                      │
+        │ • Trailer                       │
+        │                                 │
+        │ Debts                           │
+        │ • Mortgage                      │
+        │ • Student Loan                  │
+        │ • Credit Cards                  │
+        └─────────────────────────────────┘
+
+
+                   LEDGER ENGINE
+            (Derived from transactions)
+
+                     ▼
+               Account Balances
+                     ▼
+               Cash Flow Model
+
+
+                  ANALYTICS LAYER
+           (Financial health metrics)
+
+        ┌─────────────────────────────────┐
+        │ Net Worth                       │
+        │ Monthly Surplus                 │
+        │ Savings Rate                    │
+        │ Debt-to-Income Ratio (DTI)      │
+        │ Liquidity Ratio                 │
+        │ Cash Runway                     │
+        └─────────────────────────────────┘
+
+
+                  STABILITY ENGINE
+         (Financial safety evaluation)
+
+        ┌─────────────────────────────────┐
+        │ Emergency Fund Progress         │
+        │ Liquidity Runway                │
+        │ Debt Pressure                   │
+        │ Savings Buckets                 │
+        │ Financial Stress Indicators     │
+        └─────────────────────────────────┘
+
+
+                  FORECAST ENGINE
+            (Engineering economy layer)
+
+        ┌─────────────────────────────────┐
+        │ Debt Payoff Simulation          │
+        │ Investment Growth Projection    │
+        │ Net Worth Forecast              │
+        │ Inflation Adjusted Planning     │
+        │ Cost / Benefit Analysis         │
+        └─────────────────────────────────┘
+
+
+                     OUTPUT
+              (User interface pages)
+
+        ┌─────────────────────────────────┐
+        │ Dashboard                       │
+        │ Transactions                    │
+        │ Accounts                        │
+        │ Net Worth                       │
+        │ Stability                       │
+        │ Forecast (future)               │
+        └─────────────────────────────────┘

@@ -1,0 +1,14 @@
+WealthForge Database Schema (Clean Model)
+
+Think of the database as five core collections.
+
+wealthforge
+│
+├ accounts
+├ transactions
+├ assets
+├ debts
+├ budget
+└ networth_history
+
+Each collection represents a financial subsystem.

@@ -1,0 +1,33 @@
+wealthforge/
+│
+├ app.py
+│
+├ db/
+│   ├ db.py
+│   └ seed_data.py
+│
+├ models/
+│   ├ accounts.py
+│   ├ transactions.py
+│   ├ assets.py
+│   ├ debts.py
+│   └ budget.py
+│
+├ services/
+│   ├ ledger_service.py
+│   ├ analytics_service.py
+│   └ forecast_service.py
+│
+├ pages/
+│   ├ dashboard.py
+│   ├ transactions.py
+│   ├ accounts.py
+│   ├ networth.py
+│   └ stability.py
+│
+├ utils/
+│   ├ calculations.py
+│   └ formatting.py
+│
+├ config.py
+└ requirements.txt

@@ -1,0 +1,69 @@
+                         WEALTHFORGE
+                     Financial Data Engine
+                             │
+                             │
+         ┌───────────────────┴───────────────────┐
+         │                                       │
+     INPUT LAYER                             STATE LAYER
+   (Raw Financial Data)                   (Financial Position)
+         │                                       │
+         │                                       │
+   Transactions Ledger                   Balance Sheet Model
+         │                                       │
+         │                                       │
+         ▼                                       ▼
+┌────────────────────┐                 ┌──────────────────────┐
+│ Income Transactions │                 │        Assets         │
+│ Expense Transactions│                 │  • Liquid Assets      │
+│ Categories          │                 │  • Illiquid Assets    │
+│ Date + Notes        │                 │                       │
+└────────────────────┘                 └──────────────────────┘
+           │                                     │
+           │                                     │
+           ▼                                     ▼
+   Cashflow Engine                        Liability Registry
+           │                                     │
+           ▼                                     ▼
+┌────────────────────┐                 ┌──────────────────────┐
+│ Monthly Cashflow   │                 │        Debts          │
+│ Income vs Expenses │                 │ Mortgage              │
+│ Savings Rate       │                 │ Credit Cards          │
+│ Burn Rate          │                 │ Loans                 │
+└────────────────────┘                 └──────────────────────┘
+
+
+                     ANALYTICS LAYER
+                 (Derived Financial Metrics)
+
+                ┌──────────────────────────┐
+                │ Net Worth                 │
+                │ Savings Rate              │
+                │ Liquidity Ratio           │
+                │ Monthly Surplus           │
+                │ Debt-to-Income Ratio      │
+                └──────────────────────────┘
+
+
+                    STABILITY ENGINE
+              (Financial Resilience Model)
+
+                ┌──────────────────────────┐
+                │ Emergency Fund           │
+                │ Savings Buckets          │
+                │ Property Tax Fund        │
+                │ Holiday Fund             │
+                │ Maintenance Fund         │
+                │ Liquidity Runway         │
+                └──────────────────────────┘
+
+
+                     FORECAST ENGINE
+              (Engineering Economy Layer)
+
+                ┌──────────────────────────┐
+                │ Future Net Worth         │
+                │ Debt Payoff Simulation   │
+                │ Retirement Projection    │
+                │ Inflation Adjustment     │
+                │ Cost/Benefit Scenarios   │
+                └──────────────────────────┘

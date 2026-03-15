@@ -1,0 +1,71 @@
+                    WEALTHFORGE DATABASE
+────────────────────────────────────────────────────────
+
+                        accounts
+                     (financial containers)
+                     ────────────────────
+                     _id
+                     name
+                     type
+                     liquidity
+
+                         ▲
+                         │
+                         │
+                         │
+                   transactions
+                (financial ledger)
+                ─────────────────
+                _id
+                type
+                category
+                account
+                from_account
+                to_account
+                amount
+                date
+                note
+
+                         │
+                         │
+                         ▼
+
+                     account balances
+              (derived from transactions)
+
+────────────────────────────────────────────────────────
+
+
+                          assets
+                  (illiquid balance sheet)
+                  ────────────────────────
+                  _id
+                  name
+                  value
+                  type
+
+
+                          debts
+                   (liability registry)
+                   ───────────────────
+                   _id
+                   name
+                   balance
+                   interest_rate
+                   minimum_payment
+
+
+                          budget
+                    (financial plan)
+                    ─────────────────
+                    _id
+                    monthly_income
+                    expenses
+
+
+                     networth_history
+                (time-series financial data)
+                ────────────────────────────
+                _id
+                date
+                net_worth

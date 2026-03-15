@@ -1,0 +1,21 @@
+Ledger Layer
+Transactions
+
+Account Layer
+Checking
+Savings
+Credit Cards
+
+Balance Sheet
+Assets
+Debts
+
+Analytics
+Net Worth
+Savings Rate
+DTI
+Liquidity
+
+Forecast
+Future wealth
+Debt payoff simulations
